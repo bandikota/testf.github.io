@@ -1,0 +1,87 @@
+$primary: #68B2CA;
+$hover:#166F8C;
+$bgcolor: #EAF3F5;
+$secondary:#F7F7F8;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+$warning: #ff941a;
+$danger: #f05c46;
+$font:#343A3C;
+$light: #ffffff;
+$black:#000000;
+$form:#8B9396;
+$theme-colors: ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, 'form':$form);
+
+/*$info: #38a1d6;
+$success: #79b821;
+$dark: #000000;
+$focus: #ffcc00;
+$special: #3dcfcf;
+
+$successMessage: #66A419;
+$infoMessage: #2C8DC4;
+$attentionMessage: #F28013;
+$warningMessage: #E04B37;*/
+
+@function _color-lighten($byte, $factorOpacity, $factorDark) {
+    $res: $byte + (255 - (255 - $byte)*(255 - $byte)/255 - $byte) * $factorOpacity;
+    @return $res * (1 - $factorDark)+255 * $factorDark;
+}
+
+@function _color-darken($byte, $factorOpacity, $factorDark) {
+    $res: $byte - (($byte - ($byte * $byte / 255)) * $factorOpacity);
+    @return $res - ($res * $factorDark);
+}
+
+@function color-theme($color, $index) {
+    @if ($index==100) {
+        @return $color;
+    }
+    @else if ($index < 100) {
+        //60 - $index/2
+        $factorOpacity: 1 - (100 - (60 - $index/2))/100;
+        $factorDark: (100 - $index) / 100;
+        //
+        @return rgb( _color-lighten(red($color), $factorOpacity, $factorDark), _color-lighten(green($color), $factorOpacity, $factorDark), _color-lighten(blue($color), $factorOpacity, $factorDark));
+    }
+    @else {
+        //$index - 100, $index/3-35
+        $factorOpacity: 1 - (100 - ($index - 100))/100;
+        $factorDark: (($index/3-35) / 100);
+        $red: red($color) - ((red($color) - (red($color) * red($color) / 255)) * $factorOpacity);
+        @return rgb( _color-darken(red($color), $factorOpacity, $factorDark), _color-darken(green($color), $factorOpacity, $factorDark), _color-darken(blue($color), $factorOpacity, $factorDark));
+    }
+}
+
+
+/**
+  Фунция отдает карту с цветавыми индексами от 10 до 180 с шагом 10
+ */
+
+@function color-to-scheme($color) {
+    $map: ();
+    @for $i from 1 through 18 {
+        $map: map-merge($map, ($i*10: color-theme($color, $i * 10)))
+    }
+    @return $map;
+}
+
+
+/*$primaries: () !default;
+$primaries: map-merge( color-to-scheme($primary), $primaries);
+$warnings: () !default;
+$warnings: map-merge( color-to-scheme($warning), $warnings);
+$dangers: () !default;
+$dangers: map-merge( color-to-scheme($danger), $dangers);
+$infos: () !default;
+$infos: map-merge( color-to-scheme($info), $infos);
+$successes: () !default;
+$successes: map-merge( color-to-scheme($success), $successes);
+$darks: ( 54: color-theme($dark, 54), 15: color-theme($dark, 15), 5: color-theme($dark, 5), ) !default;
+$darks: map-merge( color-to-scheme($dark), $darks);
+$focuses: () !default;
+$focuses: map-merge( color-to-scheme($focus), $focuses);*/

@@ -1,0 +1,110 @@
+@mixin box-shadow($params...) {
+    -webkit-box-shadow: $params;
+    -moz-box-shadow: $params;
+    box-shadow: $params;
+}
+
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin flex-grow($grow) {
+    -webkit-flex-grow: $grow;
+    -moz-flex-grow: $grow;
+    -ms-flex-grow: $grow;
+    flex-grow: $grow;
+}
+
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
+
+@mixin align-content($align) {
+    -webkit-align-content: $align;
+    -moz-align-content: $align;
+    -ms-align-content: $align;
+    align-content: $align;
+}
+
+@mixin align-items($align) {
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    -ms-align-items: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+}
+
+@mixin transform($value) {
+    transform: ($value);
+}
+
+@mixin transition($value) {
+    transition: ($value);
+}
+
+@mixin svg-icon-color($color) {
+    path,
+    rect {
+        fill: $color;
+    }
+    path,
+    rect {
+        fill: $color;
+    }
+}
+
+@mixin preloader-color($color) {
+    .emias-preloader-base .block .wrapper .spinner .path {
+        stroke: $color;
+    }
+}
+
+@mixin font($size, $lheight, $weight) {
+    font-size: $size;
+    line-height: $lheight;
+    font-weight: $weight;
+}
+
+@mixin text-color($color, $value) {
+    color: map-get($color, $value);
+}
+
+@mixin button-size($padding-y, $padding-x, $font-size) {
+    padding: $padding-y $padding-x;
+    font-size: $font-size;
+}
+
+@mixin hover {
+    &:hover {
+        @content;
+    }
+}
+
+@mixin hover-focus {
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+@mixin hover-focus-active {
+    &:hover,
+    &:focus,
+    &:active {
+        @content;
+    }
+}

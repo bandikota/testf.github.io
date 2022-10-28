@@ -1,0 +1,170 @@
+$body-color: #333333;
+$grid-gutter-width:24px;
+$fontFamily: 'Noto Sans',
+sans-serif;
+$fontSizeDefault: 0.875rem;
+// base theme
+
+/*$theme-colors: ( "primary": $primary, "secondary": $special, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, "focus": $focus);*/
+
+// core border-radius
+$border-radius: 0rem !default;
+$border-radius-lg: 0rem !default;
+$border-radius-sm: 0rem !default;
+// navbar
+$navbar-padding-y: 0.0625rem !default;
+$navbar-dark-color: rgba($light, .75) !default;
+$navbar-dark-hover-color: rgba($light, .9) !default;
+$navbar-dark-disabled-color: rgba($light, .5) !default;
+$base-gutter: 0.5rem;
+
+/*$input-border-color:map-get($darks, 50);*/
+
+$border:1px solid #ccc;
+//$bg-grey:map-get($darks, 5);
+// Shadows
+$z-depth-4: 0px 4px 33px rgba(206, 211, 224, 0.68)!default;
+$z-depth-6: 0px 4px 9px rgba(206, 211, 224, 0.68)!default;
+$z-depth-5: 6px -6px 9px rgba(174, 174, 174, 0.24)!default;
+$z-depth-3: 6px 3px 9px rgba(174, 174, 174, 0.24)!default;
+$z-depth-2: 0px 4px 33px rgba(185, 208, 216, 0.17) !default;
+$z-depth-1: 0px 2px 6px rgba(135, 151, 156, 0.15) !default;
+// Transitions
+$transition-basic: all .2s ease-in-out !default;
+$transition-hoverable: all .55s ease-in-out !default;
+// Buttons
+$btn-color-basic: $light !default;
+$btn-margin-basic: .375rem !default;
+$btn-padding-y-basic: .5rem !default;
+$btn-padding-x-basic: 2rem !default;
+$btn-font-size-basic: 1rem !default;
+$btn-padding-y-small: .5rem !default;
+$btn-padding-x-small: 1rem !default;
+$btn-transition: $transition-basic !default;
+// Border radius
+$border-radius-base: .625rem !default;
+$border-radius-circle: 50% !default;
+// Cards
+// Modals
+$padding-x:2rem;
+$padding-y:2rem;
+$box-shadow: 0 .5rem 1rem rgba($black, .15);
+$box-shadow-light: 0px 2px 6px rgba(135, 151, 156, 0.15) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, .075);
+// Cards
+$card-spacer-y: 2*$spacer;
+$card-spacer-x: 2*$spacer;
+$card-title-spacer-y: $spacer;
+$card-border-width:0;
+$card-border-radius: 1rem;
+$card-cap-padding-y: $card-spacer-y / 2;
+$card-cap-padding-x: $card-spacer-x;
+$card-cap-bg:$white;
+$card-bg: $white;
+$card-group-margin: $grid-gutter-width / 2;
+$card-link-transition: .2s ease-in-out !default;
+$card-font-size: .875rem !default;
+$card-text-color: #36333A !default;
+// Dropdown
+$dropdown-spacer: .125rem;
+$dropdown-font-size: 1rem;
+$dropdown-color: $body-color;
+$dropdown-border-color: #F1F1F1;
+$dropdown-border-radius: $spacer / 2;
+$dropdown-divider-bg: $dropdown-border-color;
+$dropdown-divider-margin-y: $spacer / 2;
+$dropdown-box-shadow: $box-shadow;
+$dropdown-link-hover-bg: $bgcolor;
+$dropdown-item-padding-y: $spacer / 2;
+$dropdown-item-padding-x: $spacer;
+// Tabs
+$nav-link-padding-y: 0.75rem;
+$nav-link-padding-x: 1.5rem;
+$nav-link-font-size:1rem;
+$nav-link-transition: color .15s ease-in-out,
+background-color .15s ease-in-out,
+border-color .15s ease-in-out;
+$nav-tabs-border-color: #f1f1f1;
+$nav-tabs-border-width: 0.0625rem;
+$nav-tabs-border-radius: 1rem;
+$nav-tabs-link-hover-border-color:#f1f1f1!important;
+$nav-tabs-link-bg: $secondary;
+$nav-tabs-link-active-bg: $light;
+$nav-tabs-link-active-border-color:#ffffff!important;
+$nav-link-border-radius: $border-radius;
+$nav-tabs-box-shadow: 0px 4px 33px rgba(206, 211, 224, 0.12);
+//Modal
+$modal-header-padding: 1.75rem 2rem;
+$modal-title-line-height: 2rem;
+$modal-content-color: null;
+$modal-content-bg:$secondary;
+$modal-content-border-color: transparent;
+$modal-content-border-width: 0;
+$modal-content-border-radius: 1rem;
+$modal-backdrop-bg: $black;
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
+$modal-header-padding-y:1.75rem;
+$modal-header-padding-x:1.75rem;
+$modal-sm: 300px;
+$modal-md: 500px;
+$modal-lg: 800px;
+$modal-xl: 1368px;
+//Table
+$table-cell-padding-y: 0.875rem;
+$table-cell-padding-x: 1rem;
+$table-cell-padding-y-sm: .25rem;
+$table-cell-padding-x-sm: .25rem;
+$table-cell-vertical-align: top;
+$table-th-font-weight:400;
+$table-border-color: #F4F4F4;
+$form-check-input-checked-bg-color:$primary;
+$form-check-input-checked-border-color:$primary;
+$form-check-input-focus-box-shadow:none;
+$form-check-input-focus-border:#BEC4C6;
+$form-check-input-border:1px solid #BEC4C6;
+//$form-check-input-width:;
+$btn-padding-y:0.4375rem;
+$btn-padding-x:1.375rem;
+$btn-padding-y-sm:0.4375rem;
+$btn-padding-x-sm: 2rem;
+$btn-font-size: 1rem;
+$btn-font-weight:500;
+$btn-border-radius: 0.625rem;
+$btn-border-radius-sm: $border-radius-sm;
+$btn-border-radius-lg: $border-radius-lg;
+$btn-box-shadow: 0px 2px 6px rgba(135, 151, 156, 0.15);
+$btn-focus-box-shadow:0px 2px 6px rgba(135, 151, 156, 0.68);
+$input-bg: $secondary;
+$input-border-color: $secondary;
+$input-border-radius:10px;
+$input-focus-border-color: tint-color( $secondary, 50%);
+$input-focus-bg: $input-bg;
+$input-focus-box-shadow:$z-depth-3;
+$input-padding-y:0.5313rem;
+$input-placeholder-color: #8B9396;
+$badge-font-size: 0.875rem;
+$badge-font-weight: $font-weight-normal;
+$badge-color: $font;
+$badge-padding-y: 0.6875rem;
+$badge-padding-x: 1rem;
+$badge-border-radius: 1rem;
+$accordion-button-padding-y: 1rem;
+$accordion-button-padding-x: 0;
+$accordion-button-active-color:$font;
+$accordion-button-active-bg:transparent;
+$accordion-border-width: 0;
+$accordion-icon-width: 0.7rem;
+$accordion-button-bg:transparent;
+$accordion-button-active-bg:transparent;
+$accordion-bg:transparent;
+$accordion-button-focus-box-shadow:none;
+$accordion-body-padding-y:0rem;
+$accordion-body-padding-x:0;
+$form-select-border-width:0;
+$form-select-padding-y: 9.5px;
+$form-select-border-radius:10px;
+$form-select-color: #8B9396;
+$form-select-font-size: 0.875rem;
+$form-select-focus-box-shadow:$z-depth-6

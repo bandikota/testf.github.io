@@ -1,0 +1,22 @@
+.navbar {
+    background: #fff;
+    padding-top: $navbar-padding-y;
+    padding-right: $navbar-padding-x; // default: null
+    padding-bottom: $navbar-padding-y;
+    padding-left: $navbar-padding-x;
+}
+
+.nav-link {
+    color: $nav-link-color;
+    padding: rfs-fluid-value(2rem);
+    @include media-breakpoint-down(xxl) {
+        padding: rfs-fluid-value(1.5rem);
+    }
+    font-size: $nav-link-font-size;
+    margin-left: 2.5rem;
+    &:hover,
+    &:focus,
+    &.active {
+        color: $navbar-light-active-color;
+    }
+}

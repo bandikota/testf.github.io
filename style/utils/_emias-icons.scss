@@ -1,0 +1,1147 @@
+@font-face {
+    font-family: 'emias-icons';
+    src: url('../fonts/emias-icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ei::before {
+    font-family: "emias-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontSizeDefault;
+    speak: none;
+    display: flex;
+    justify-content: center;
+    text-decoration: inherit;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 12px;
+}
+
+.ei.ei-small::before {
+    font-size: 1rem;
+}
+
+.ei.ei-large::before {
+    font-size: 24px!important;
+}
+
+.ei.ei-regular:before {
+    font-size: 20px!important;
+}
+
+.ei.ei-medium::before {
+    font-size: 32px!important;
+}
+
+.ei.ei-xlarge::before {
+    font-size: 3rem!important;
+}
+
+.ei-json:before {
+    content: "\e96b";
+    color: #269999;
+}
+
+.ei-text:before {
+    content: "\e96c";
+}
+
+.ei-print-m:before {
+    content: "\e953";
+}
+
+.ei-print-h:before {
+    content: "\e954";
+}
+
+.ei-mobile:before {
+    content: "\e94a";
+}
+
+.ei-attention:before {
+    content: "\e943";
+}
+
+.ei-copy-alt:before {
+    content: "\e944";
+}
+
+.ei-recovery:before {
+    content: "\e945";
+}
+
+.ei-construct:before {
+    content: "\e946";
+}
+
+.ei-wrench:before {
+    content: "\e947";
+}
+
+.ei-truck:before {
+    content: "\e948";
+}
+
+.ei-alert:before {
+    content: "\e949";
+}
+
+.ei-person-delete:before {
+    content: "\e952";
+}
+
+.ei-exclamation-circle:before {
+    content: "\e94c";
+}
+
+.ei-file-attention:before {
+    content: "\e94d";
+}
+
+.ei-location:before {
+    content: "\e94e";
+}
+
+.ei-ban:before {
+    content: "\e94f";
+}
+
+.ei-user-attention:before {
+    content: "\e950";
+}
+
+.ei-bed:before {
+    content: "\e951";
+}
+
+.ei-user-delete:before {
+    content: "\e94b";
+}
+
+.ei-mobile:before {
+    content: "\e94a";
+}
+
+.ei-monitor:before {
+    content: "\e942";
+}
+
+.ei-stop:before {
+    content: "\e941";
+}
+
+.ei-parcell-24:before {
+    content: "\e93d";
+}
+
+.ei-file-blank-24:before {
+    content: "\e93e";
+}
+
+.ei-u_clock-ten-1:before {
+    content: "\e93f";
+}
+
+.ei-qr-cross:before {
+    content: "\e940";
+}
+
+.ei-tag:before {
+    content: "\e937";
+}
+
+.ei-file-medical:before {
+    content: "\e93a";
+}
+
+.ei-call-3:before {
+    content: "\e93b";
+    color: #6ca7d2;
+}
+
+.ei-call-4:before {
+    content: "\e93c";
+    color: #ff941a;
+}
+
+.ei-call-1:before {
+    content: "\e92d";
+}
+
+.ei-call-2:before {
+    content: "\e92e";
+}
+
+.ei-qrcode:before {
+    content: "\e925";
+}
+
+.ei-relapse:before {
+    content: "\e927";
+}
+
+.ei-vaccine-refusal:before {
+    content: "\e926";
+    color: #f05c46;
+}
+
+.ei-vaccine-v1:before {
+    content: "\e923";
+}
+
+.ei-vaccine-v2:before {
+    content: "\e924";
+}
+
+.ei-person-contact:before {
+    content: "\e921";
+    color: #269999;
+}
+
+.ei-person-ill:before {
+    content: "\e922";
+    color: #f05c46;
+}
+
+.ei-profile-24:before {
+    content: "\e920";
+}
+
+.ei-chevron-in:before {
+    content: "\e91e";
+    color: #269999;
+    font-size: 9px!important;
+}
+
+.ei-chevron-out:before {
+    content: "\e91f";
+    color: #269999;
+    font-size: 9px!important;
+}
+
+.ei-pdf:before {
+    content: "\e91f";
+}
+
+.ei-pasport:before {
+    content: "\e91d";
+}
+
+.ei-task-24:before {
+    content: "\e91c";
+}
+
+.ei-clock:before {
+    content: "\e91b";
+}
+
+.ei-broom-24:before {
+    content: "\e918";
+    color: #fff;
+}
+
+.ei-remove-filter-24:before {
+    content: "\e919";
+    color: #fff;
+}
+
+.ei-call-24:before {
+    content: "\e91a";
+}
+
+.ei-time-24:before {
+    content: "\e917";
+}
+
+.ei-cross-24 {
+    &:before {
+        content: "\e912";
+        color: #fff;
+    }
+    &.danger {
+        &:before {
+            color: $danger
+        }
+    }
+}
+
+.ei-create-24:before {
+    content: "\e900";
+}
+
+.ei-phone-24 {
+    &:before {
+        content: "\e901";
+    }
+    &.ei-large {
+        &:before {
+            font-size: 19px!important
+        }
+    }
+}
+
+.ei-bd-24:before {
+    content: "\e902";
+}
+
+.ei-account-search-outline-24:before {
+    content: "\e800";
+}
+
+.ei-add-32:before {
+    content: "\e801";
+}
+
+.ei-ambulance-24:before {
+    content: "\e802";
+}
+
+.ei-call-1:before {
+    content: "\e938";
+}
+
+.ei-call-2:before {
+    content: "\e939";
+}
+
+.ei-calend:before {
+    content: "\e935";
+}
+
+.ei-qr-scan:before {
+    content: "\e92d";
+}
+
+.ei-coin:before {
+    content: "\e92e";
+}
+
+.ei-active:before {
+    content: "\e92f";
+}
+
+.ei-mail-2:before {
+    content: "\e930";
+}
+
+.ei-phone-2:before {
+    content: "\e931";
+}
+
+.ei-calend-select:before {
+    content: "\e932";
+}
+
+.ei-check-circle:before {
+    content: "\e933";
+}
+
+.ei-exclamation:before {
+    content: "\e934";
+}
+
+.ei-ambulance-car-24:before {
+    content: "\e803";
+}
+
+.ei-ambulance-outline-24:before {
+    content: "\e804";
+}
+
+.ei-amplitude-32:before {
+    content: "\e805";
+}
+
+.ei-approved-24:before {
+    content: "\e806";
+}
+
+.ei-attention-24:before {
+    content: "\e807";
+}
+
+.ei-attention-32:before {
+    content: "\e808";
+}
+
+.ei-attention-line:before {
+    content: "\e809";
+    color: #ff941a;
+}
+
+.ei-attention-line-2:before {
+    content: "\e809";
+}
+
+.ei-attention-line-48:before {
+    content: "\e80a";
+}
+
+.ei-baby-24:before {
+    content: "\e80b";
+}
+
+.ei-baby-bottle-32:before {
+    content: "\e80c";
+}
+
+.ei-bell-24:before {
+    content: "\e80d";
+}
+
+.ei-bell-32:before {
+    content: "\e80e";
+}
+
+.ei-calculate-24:before {
+    content: "\e80f";
+}
+
+.ei-calendar-16:before {
+    content: "\e810";
+}
+
+.ei-calendar-161:before {
+    content: "\e811";
+}
+
+.ei-cannabis-16:before {
+    content: "\e812";
+}
+
+.ei-chargeable-24:before {
+    content: "\e813";
+}
+
+.ei-chat-32:before {
+    content: "\e814";
+}
+
+.ei-chat-not-available-32:before {
+    content: "\e815";
+}
+
+.ei-chevron-down-16:before {
+    content: "\e816";
+}
+
+.ei-chevron-down-24:before {
+    content: "\e817";
+}
+
+.ei-chevron-left-16:before {
+    content: "\e818";
+}
+
+.ei-chevron-left-24:before {
+    content: "\e819";
+}
+
+.ei-chevron-left-double-24:before {
+    content: "\e81a";
+}
+
+.ei-chevron-nav-32:before {
+    content: "\e81b";
+}
+
+.ei-chevron-right-16:before {
+    content: "\e81c";
+}
+
+.ei-chevron-right-24:before {
+    content: "\e81d";
+}
+
+.ei-chevron-right-double-24:before {
+    content: "\e81e";
+}
+
+.ei-chevron-up-16:before {
+    content: "\e81f";
+}
+
+.ei-chevron-up-24:before {
+    content: "\e820";
+}
+
+.ei-cito-24:before {
+    content: "\e821";
+}
+
+.ei-clip-24:before {
+    content: "\e822";
+}
+
+.ei-clock-24:before {
+    content: "\e823";
+}
+
+.ei-close-12-24:before {
+    content: "\e824";
+}
+
+.ei-close-16:before {
+    content: "\e825";
+}
+
+.ei-close-24:before {
+    content: "\e826";
+}
+
+.ei-close-tag-16:before {
+    content: "\e827";
+}
+
+.ei-cog-32:before {
+    content: "\e828";
+}
+
+.ei-contrast-32:before {
+    content: "\e829";
+}
+
+.ei-crossed-bell-24:before {
+    content: "\e82a";
+}
+
+.ei-crossed-phone-24:before {
+    content: "\e82b";
+}
+
+.ei-crutch-16:before {
+    content: "\e82c";
+}
+
+.ei-delete-24:before {
+    content: "\e82d";
+}
+
+.ei-delivered-24:before {
+    content: "\e82e";
+}
+
+.ei-digital-sign-32:before {
+    content: "\e82f";
+}
+
+.ei-dispensary-32:before {
+    content: "\e830";
+}
+
+.ei-doctor-32:before {
+    content: "\e831";
+}
+
+.ei-document:before {
+    content: "\e832";
+}
+
+.ei-document-32:before {
+    content: "\e833";
+}
+
+.ei-documents-24:before {
+    content: "\e834";
+}
+
+.ei-download-24:before {
+    content: "\e835";
+}
+
+.ei-dropper-16:before {
+    content: "\e836";
+}
+
+.ei-dropper-32:before {
+    content: "\e837";
+}
+
+.ei-durability-32:before {
+    content: "\e838";
+}
+
+.ei-ecg-24:before {
+    content: "\e839";
+}
+
+.ei-edit-24:before {
+    content: "\e83a";
+}
+
+.ei-e-sign-24:before {
+    content: "\e83b";
+}
+
+.ei-exit-24:before {
+    content: "\e83c";
+}
+
+.ei-expand-24:before {
+    content: "\e83d";
+}
+
+.ei-expand-32:before {
+    content: "\e83e";
+}
+
+.ei-female-24:before {
+    content: "\e83f";
+}
+
+.ei-filter-24:before {
+    content: "\e840";
+    font-size: 26px!important
+}
+
+.ei-group-24:before {
+    content: "\e842";
+}
+
+.ei-hand-32:before {
+    content: "\e843";
+}
+
+.ei-health-card-32:before {
+    content: "\e844";
+}
+
+.ei-heartbeat-32:before {
+    content: "\e845";
+}
+
+.ei-hospital-24:before {
+    content: "\e846";
+}
+
+.ei-hospital-bed-24:before {
+    content: "\e847";
+}
+
+.ei-img-24:before {
+    content: "\e848";
+}
+
+.ei-info-16 {
+    &:before {
+        content: "\e849";
+    }
+    &.ei-large::before {
+        content: "\e849";
+        font-size: 21px !important;
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.ei-info-24:before {
+    content: "\e84a";
+}
+
+.ei-info-32:before {
+    content: "\e84b";
+}
+
+.ei-info-line-16:before {
+    content: "\e84c";
+}
+
+.ei-info-line-48:before {
+    content: "\e84d";
+}
+
+.ei-interpretation:before {
+    content: "\e84e";
+}
+
+.ei-interval-32:before {
+    content: "\e84f";
+}
+
+.ei-kebab-16:before {
+    content: "\e850";
+}
+
+.ei-list-24:before {
+    content: "\e852";
+}
+
+.ei-locked-24:before {
+    content: "\e853";
+}
+
+.ei-locus-16:before {
+    content: "\e854";
+}
+
+.ei-log-out-24:before {
+    content: "\e855";
+}
+
+.ei-mail-24:before {
+    content: "\e856";
+}
+
+.ei-male-24:before {
+    content: "\e857";
+}
+
+.ei-mark-done-24:before {
+    content: "\e858";
+}
+
+.ei-message:before {
+    content: "\e859";
+}
+
+.ei-message-exist-24:before {
+    content: "\e85a";
+}
+
+.ei-message-more-24:before {
+    content: "\e85b";
+}
+
+.ei-message-new-24:before {
+    content: "\e85c";
+}
+
+.ei-microscope-32:before {
+    content: "\e85d";
+}
+
+.ei-minimize-16:before {
+    content: "\e85e";
+}
+
+.ei-minus-16:before {
+    content: "\e85f";
+}
+
+.ei-minus-24:before {
+    content: "\e860";
+}
+
+.ei-multiple-view-24:before {
+    content: "\e861";
+}
+
+.ei-new-file-32:before {
+    content: "\e862";
+}
+
+.ei-not-approved-24:before {
+    content: "\e863";
+}
+
+.ei-oncology-32:before {
+    content: "\e864";
+}
+
+.ei-pacemaker-32:before {
+    content: "\e865";
+}
+
+.ei-paperclip-24:before {
+    content: "\e866";
+}
+
+.ei-passport-health-24:before {
+    content: "\e867";
+}
+
+.ei-paste-left-16:before {
+    content: "\e868";
+}
+
+.ei-paste-right-16:before {
+    content: "\e869";
+}
+
+.ei-patronage-24:before {
+    content: "\e86a";
+}
+
+.ei-pause-16:before {
+    content: "\e86b";
+}
+
+.ei-phone-callback-24:before {
+    content: "\e86c";
+}
+
+.ei-pill-16:before {
+    content: "\e86d";
+}
+
+.ei-pill-32:before {
+    content: "\e86e";
+}
+
+.ei-pin-24:before {
+    content: "\e86f";
+}
+
+.ei-pin-32:before {
+    content: "\e870";
+}
+
+.ei-play-24:before {
+    content: "\e871";
+}
+
+.ei-plus-16:before {
+    content: "\e872";
+}
+
+.ei-plus-24:before {
+    content: "\e873";
+}
+
+.ei-plus-small-16:before {
+    content: "\e875";
+}
+
+.ei-portfolio-32:before {
+    content: "\e876";
+}
+
+.ei-print-24:before {
+    content: "\e877";
+}
+
+.ei-print-32:before {
+    content: "\e878";
+}
+
+.ei-printed-24:before {
+    content: "\e879";
+}
+
+.ei-profile-32:before {
+    content: "\e87b";
+}
+
+.ei-profile-48:before {
+    content: "\e87c";
+}
+
+.ei-question-16:before {
+    content: "\e87d";
+}
+
+.ei-question-line-16:before {
+    content: "\e87e";
+}
+
+.ei-read-24:before {
+    content: "\e87f";
+}
+
+.ei-recent-24:before {
+    content: "\e880";
+}
+
+.ei-recent-32:before {
+    content: "\e881";
+}
+
+.ei-recommend-24:before {
+    content: "\e882";
+}
+
+.ei-refresh-24:before {
+    content: "\e883";
+}
+
+.ei-register-card-32:before {
+    content: "\e884";
+}
+
+.ei-repeat-24:before {
+    content: "\e885";
+}
+
+.ei-representative:before {
+    content: "\e886";
+}
+
+.ei-ruler-24:before {
+    content: "\e887";
+}
+
+.ei-schedule-24:before {
+    content: "\e888";
+}
+
+.ei-search-24:before {
+    content: "\e889";
+}
+
+.ei-sensor-32:before {
+    content: "\e88a";
+}
+
+.ei-simplify-32:before {
+    content: "\e88b";
+}
+
+.ei-sorting-decrease-16:before {
+    content: "\e88c";
+}
+
+.ei-sorting-increase-16:before {
+    content: "\e88d";
+}
+
+.ei-star-fill-24:before {
+    content: "\e88e";
+}
+
+.ei-star-line-24:before {
+    content: "\e88f";
+}
+
+.ei-stethoscope-2-24:before {
+    content: "\e890";
+}
+
+.ei-stethoscope-24:before {
+    content: "\e891";
+}
+
+.ei-success-24:before {
+    content: "\e892";
+}
+
+.ei-success-32:before {
+    content: "\e893";
+}
+
+.ei-success-line-48:before {
+    content: "\e894";
+}
+
+.ei-suitcase-red-fill-24:before {
+    content: "\e895";
+}
+
+.ei-suitcase-red-fill-241:before {
+    content: "\e896";
+}
+
+.ei-suitcase-teal-line-24:before {
+    content: "\e897";
+}
+
+.ei-syringe-24:before {
+    content: "\e898";
+}
+
+.ei-syringe-32:before {
+    content: "\e899";
+}
+
+.ei-task-done-24:before {
+    content: "\e89a";
+}
+
+.ei-task-waiting-24:before {
+    content: "\e89b";
+}
+
+.ei-template-24:before {
+    content: "\e89c";
+}
+
+.ei-tent-32:before {
+    content: "\e89d";
+}
+
+.ei-ecg-241:before {
+    content: "\e89e";
+}
+
+.ei-tube-32:before {
+    content: "\e89f";
+}
+
+.ei-umbrella-16:before {
+    content: "\e8a0";
+}
+
+.ei-unisex-24:before {
+    content: "\e8a1";
+}
+
+.ei-unlocked-24:before {
+    content: "\e8a2";
+}
+
+.ei-up-24:before {
+    content: "\e8a3";
+}
+
+.ei-upload-24:before {
+    content: "\e8a4";
+}
+
+.ei-user-16:before {
+    content: "\e8a5";
+}
+
+.ei-waiting-approve-24:before {
+    content: "\e8a6";
+}
+
+.ei-attention-241:before {
+    content: "\e8a7";
+}
+
+.ei-attention-321:before {
+    content: "\e8a8";
+}
+
+.ei-zoom-in-32:before {
+    content: "\e8aa";
+}
+
+.ei-zoom-out-32:before {
+    content: "\e8ab";
+}
+
+.ei-file_download:before {
+    content: "\e903";
+    padding-top: 3px;
+    font-size: 21px!important;
+}
+
+.ei-chat:before {
+    content: "\e905";
+}
+
+.ei-filter_24:before {
+    content: "\e906";
+}
+
+.ei-save:before {
+    content: "\e907";
+}
+
+.ei-filter1:before {
+    content: "\e908";
+}
+
+.ei-file:before {
+    content: "\e909";
+}
+
+.ei-chart:before {
+    content: "\e90a";
+}
+
+.ei-launch:before {
+    content: "\e90b";
+}
+
+.ei-history:before {
+    content: "\e90c";
+}
+
+.ei-plus-fill_24:before {
+    content: "\e90d";
+}
+
+.ei-arrow-right:before {
+    content: "\e90e";
+}
+
+.ei-filter-remove:before {
+    content: "\e90f";
+}
+
+.ei-success-fill-24:before {
+    content: "\e910";
+    color: #79b821;
+}
+
+.ei-contact {
+    &.ei-success-fill-24:before {
+        font-size: 27px!important;
+    }
+}
+
+.ei-success-fill-24-2:before {
+    content: "\e910";
+}
+
+.ei-attention-line:before {
+    content: "\e911";
+}
+
+.ei-add-files:before {
+    content: "\e913";
+}
+
+.ei-add-file:before {
+    content: "\e914";
+}
+
+.ei-avatar:before {
+    content: "\e915";
+}
+
+.ei-diskette:before {
+    content: "\e916";
+}
+
+.ei-arrow-left:before {
+    content: "\ea40";
+}
+
+.ei-filter:before {
+    content: "\e904";
+}
+
+.ei-qr-code:before {
+    content: "\e928";
+}
+
+.ei-file-check:before {
+    content: "\e929";
+}
+
+.ei-file-edit:before {
+    content: "\e92a";
+}
+
+.ei-file-exc:before {
+    content: "\e92b";
+}
+
+.ei-video-24:before {
+    content: "\e92c";
+}
+
+.ei-qr-scan:before {
+    content: "\e92d";
+}
+
+.icon-wrap {
+    padding: 16px;
+    border: 2px solid $primary;
+    align-self: flex-start;
+    margin-top: 16px;
+    margin-left: 16px;
+    .ei:before {
+        font-size: 18px;
+    }
+    .icon-name {
+        display: block;
+    }
+}
